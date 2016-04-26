@@ -1,0 +1,1 @@
+<?php  $to = "kaya.ra.kim@gmail.com";  $subject = "Message from Contact Page"; $name = $_REQUEST['name'] ; $email = $_REQUEST['email'] ;  $msg = $_REQUEST['msg'] ;  $headers = "From: $email";  $sent = mail($to, $subject, $message, $headers) ;  if($sent)  {print "Your mail was sent successfully"; } elprint "We encountered an error sending your mail"; } ?>se  {
