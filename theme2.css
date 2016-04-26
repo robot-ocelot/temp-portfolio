@@ -1,0 +1,243 @@
+html, body, {height:100%; margin: 0px;width:100%;}
+
+body {
+}
+
+.content p, .content ul {
+	font-size: 1.1em;
+}
+
+.content img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+nav.main a h2{
+	color:black ;
+}
+
+nav.main a:hover h2{
+	color:#333 ;
+}
+
+
+nav h2 {
+	margin-left: 30px;
+	font-weight: 600;
+}
+
+nav.main {
+	padding-top: 100px;	
+	height: 100vh;
+	width: 300px;
+	position:fixed;
+	z-index:999;
+	background: /*url(../images/backpanel.png) bottom left no-repeat*/ white;
+}
+
+nav.main ul {
+	display: inline-block;
+	list-style: none;
+	margin-left: 30px;
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+nav.main a {
+	text-decoration: none;
+	color: #888;
+}
+
+nav.main a:hover {
+	color: #333;
+}
+
+.copyright {
+	position: absolute;
+	font-size: 0.9em;
+	left: 30px;
+	bottom: 100px;
+	color: #999;
+}
+
+.content {
+	height: 100vh;
+	width: 100%;
+	background-color: ghostwhite;
+
+}
+
+.content-contain {
+
+	height: 100%;
+	margin-left: 300px;
+	z-index:99;
+}
+
+
+.wrap {
+	/*padding: 20px;*/
+
+}
+
+.content img {
+	display: inline-block;
+	/*max-height: 700px;*/
+	padding: 0;
+	margin: 0;
+}
+
+ .content .homegallery img {
+	width: 100%;
+	max-height:100vh;
+	float: left;
+
+}
+
+.descwrap{
+	max-height:100vh;
+	width: 100%;
+	position: relative;
+
+}
+
+.descwrap h3{
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 20px 40px 20px 40px;
+	color: ghostwhite;
+	border: 6px solid ghostwhite;
+   	font-size: 2.6em;
+   	text-transform: uppercase;
+   	font-weight: 600;
+
+}
+
+.clear {
+	clear: both;
+}
+
+/* SAME PROPORTION IMG SIZING*/
+@media (max-width: 1600px) {
+
+.content img {
+height: auto;
+width: auto;
+max-height:600px;
+}
+}
+
+@media (max-width: 1000px) {
+.content img {
+height: auto;
+width: auto;
+max-height:500px;
+}
+}
+
+@media (max-width: 800px) {
+.content img {
+height: auto;
+width: auto;
+max-height:400px;
+}
+}
+
+/* MORE MEDIA QUERY-ING */
+
+@media (max-width: 650px) {
+nav.main {
+width: 150px;
+}
+
+.content-contain {
+	margin-left:
+	150px;
+}
+}
+
+@media (max-width: 600px) {
+.content img {
+height: auto;
+width: auto;
+max-height:300px;
+}
+
+.descwrap h3 {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px 20px 10px 20px;
+	color: ghostwhite;
+	border: 5px solid ghostwhite;
+   	font-size: 2em;
+   	text-transform: uppercase;
+   	font-weight: 600;
+
+}
+}
+
+@media (max-width: 400px) {
+
+body {
+  overflow-x: hidden;
+}
+
+nav.main {
+  height: 300px;
+  width: 400px;
+  position: relative;
+}
+.content {
+  height: auto;
+  width: 400px;
+  float: left;
+  left: 0;
+  top: 250px;
+  overflow-y: auto;
+  margin-left: 0;
+  white-space: normal;
+}
+
+.content-contain {
+  float: left;
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 0;
+  height: 100%;
+  overflow-y: scroll;
+  whitespace: normal;
+}
+
+.content img {
+ float: left;
+  max-width: 400px;
+}
+
+.caption-wrap {
+  height: auto;
+  width: 400px;
+  float: left;
+}
+
+.desc {
+	position: relative;
+	top: 0;
+}
+
+.copyright {
+	position: absolute;
+	font-size: 0.9em;
+	left: 30px;
+	top: 380px;
+	color: #999;
+}
+
+}
+
+
+
+
+
