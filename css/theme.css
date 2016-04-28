@@ -189,14 +189,14 @@ padding-right:10px;
 }
 
 .content img {
- float: left;
-  max-width: 420px;
+  left: 180px;
+  max-width: 400px;
 }
 
 .content {
   height: auto;
   width: 100%;
-  left: 180px;
+  margin-left: 180px;
   top: 250px;
   overflow-y: auto;
   margin-left: 0;
