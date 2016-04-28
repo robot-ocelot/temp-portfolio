@@ -196,7 +196,6 @@ padding-right:10px;
 .content {
   height: auto;
   width: 100%;
-  float: left;
   left: 180px;
   top: 250px;
   overflow-y: auto;
@@ -239,7 +238,7 @@ padding-right:10px;
 }
 
 .desc {
-	padding-top: 0;
+	paddingtop: 0;
 	position: relative;
 	height: auto;
   	float: left;
@@ -261,6 +260,7 @@ nav.main {
   height: auto;
   width: 400px;
   float: left;
+  left: 0;
   top: 250px;
   overflow-y: auto;
   margin-left: 0;
