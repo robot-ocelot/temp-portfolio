@@ -151,27 +151,42 @@ max-height:400px;
 
 /* MORE MEDIA QUERY-ING */
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
+body {overflow-x: hidden;}
+
 nav.main {
-width: 150px;
+width: 180px;
+padding-right:10px;
+}
+
+.content img {
+  left: 180px;
+  max-width: 400px;
+}
+
+.content {
+  height: auto;
+  width: 100%;
+  margin-left: 180px;
+  top: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: 0;
+  white-space: normal;
 }
 
 .content-contain {
-	margin-left:
-	150px;
-}
-}
-
-@media (max-width: 600px) {
-.content img {
-height: auto;
-width: auto;
-max-height:300px;
+  float: left;
+  width: 420px;
+  margin-top: 30px;
+  margin-left: 180px;
+  height: 100%;
+  whitespace: normal;
 }
 
 .descwrap h3 {
 	position: absolute;
-	margin-left: 10px;
+	margin-left: 20px;
 	margin-top: 10px;
 	padding: 10px 20px 10px 20px;
 	color: ghostwhite;
