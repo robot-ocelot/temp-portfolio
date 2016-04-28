@@ -1,4 +1,4 @@
-html, body, {height:100%; margin: 0px;width:100%; font-family: "Open Sans", Helvetica, sans-serif;}
+html, body, {height:100%; margin: 0px;width:100%;}
 
 body {
 }
@@ -9,6 +9,8 @@ nav.main a h2{
 
 nav.main a:hover h2{
 	color:#333 ;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
 }
 
 
@@ -37,6 +39,8 @@ nav.main ul {
 nav.main a {
 	text-decoration: none;
 	color: #888;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
 }
 
 nav.main a:hover {
@@ -80,12 +84,20 @@ nav.main a:hover {
 	max-height: 700px;
 }
 
+.desc-contain {
+ 	position: absolute;
+	top: 700px;
+	bottom: 0;
+	padding-top: 20px;
+
+}
+
 .desc {
 	position: fixed;
-	bottom: 20px;
 	margin-left: 30px;
 	width: 55%;
 	white-space: normal;
+	overflow-x: hidden;
 }
 
 .desc p {
@@ -130,7 +142,9 @@ opacity: 100;
 
 /* SAME PROPORTION IMG SIZING*/
 @media (max-width: 1600px) {
-
+.desc-contain {
+	top: 600px;
+}
 .content img {
 height: auto;
 width: auto;
@@ -139,6 +153,10 @@ max-height:600px;
 }
 
 @media (max-width: 1000px) {
+.desc-contain {
+	top: 500px;
+}
+
 .content img {
 height: auto;
 width: auto;
@@ -147,6 +165,10 @@ max-height:500px;
 }
 
 @media (max-width: 800px) {
+.desc-contain {
+	top: 400px;
+}
+
 .content img {
 height: auto;
 width: auto;
@@ -156,22 +178,71 @@ max-height:400px;
 
 /* MORE MEDIA QUERY-ING */
 
-@media (max-width: 650px) {
+
+
+@media (max-width: 600px) {
+body {overflow-x: hidden;}
+
 nav.main {
-width: 150px;
+width: 180px;
+padding-right:10px;
+}
+
+.content img {
+ float: left;
+  max-width: 420px;
+}
+
+.content {
+  height: auto;
+  width: 100%;
+  float: left;
+  left: 180px;
+  top: 250px;
+  overflow-y: auto;
+  margin-left: 0;
+  white-space: normal;
 }
 
 .content-contain {
-	margin-left:
-	150px;
-}
+  float: left;
+  width: 420px;
+  margin-top: 30px;
+  margin-left: 180px;
+  height: 100%;
+  whitespace: normal;
 }
 
-@media (max-width: 600px) {
-.content img {
-height: auto;
-width: auto;
-max-height:300px;
+.caption-wrap {
+  height: auto;
+  width: 400px;
+  float: left;
+}
+
+.caption-wrap p, .caption-wrap:hover p{
+  top: 0;
+  background: none;
+  transition: none;
+  color: #333;
+  opacity: 1;
+
+}
+
+.desc-contain {
+	height: auto;
+	widt h: 420px;
+  	float: left;
+ 	position: relative;
+	top: 0;
+	bottom: auto;
+
+}
+
+.desc {
+	padding-top: 0;
+	position: relative;
+	height: auto;
+  	float: left;
 }
 }
 
@@ -218,9 +289,10 @@ nav.main {
   float: left;
 }
 
-.desc {
+.desc-contain {
 	position: relative;
-	top: 0;
+	padding-top: 0;
+	bottom: auto;
 }
 
 .copyright {
