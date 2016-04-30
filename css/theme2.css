@@ -60,11 +60,11 @@ nav.main a:hover {
 
 nav a {
 	opacity: 0;
- -webkit-transition: opacity 0.8s ease-in;
+	transition: opacity 0.8s ease-in;
+ 	-webkit-transition: opacity 0.8s ease-in;
        -moz-transition: opacity 0.8s ease-in;
         -ms-transition: opacity 0.8s ease-in;
-         -o-transition: opacity 0.8s ease-in;
-            transition: opacity 0.8s ease-in;
+         -o-transition: opacity 0.8s ease-in;       
 }
 
 nav a.load {
@@ -92,14 +92,8 @@ nav a.load {
 	height: 100%;
 	margin-left: 300px;
 	z-index:99;
-	overflow-x: hidden;
-	whitespace: nowrap;
-	padding-left: 20px;
-}
-
-.content-contain p {
-	margin-right: 30px;
-}
+	
+	}
 
 
 .wrap {
