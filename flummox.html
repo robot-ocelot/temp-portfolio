@@ -30,15 +30,26 @@
 <!-- JQUERY
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<script type="text/javascript" src="jquery/jquery.js"></script>
-<script type="text/javascript" src="jquery/jquery_lazyload-master/jquery.lazyload.js"></script>
-<!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- Horizontal Scroll
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>$(document).ready(function() {
+    $('html, body, *').mousewheel(function(e, delta) {
+        // multiplying by 40 is the sensitivity, 
+        // increase to scroll faster.
+        this.scrollLeft -= (delta * 120);
+    });
+
+  $("nav a, .desc").addClass("load");
+  });
+</script>
 
 
 
@@ -47,10 +58,11 @@
   <!-- Navigation Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+
   <div class="container">
   
       <div class="four columns">
-        <nav class="main">
+        <nav class="main"><div id="nav">
         <a href="index.html"><h2><em>KAYA</br>KIM</em></h2></a>
           <ul>
             <li><a href="about.html">ABOUT</a></li>
@@ -61,8 +73,9 @@
             <li><a href="contact.html">CONTACT ME</a></li>
           </ul>
           <div class="copyright">&copy; KAYA KIM 2016</div>
-        </nav>
+        </div></nav>
       </div>
+
 
         <div class="content">
           <div class="content-contain">

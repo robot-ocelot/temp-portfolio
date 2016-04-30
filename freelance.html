@@ -30,17 +30,25 @@
 <!-- JQUERY
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<script type="text/javascript" src="jquery/jquery.js"></script>
-<script type="text/javascript" src="jquery/jquery_lazyload-master/jquery.lazyload.js"></script>
-<!--<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
 
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-
+<!-- Horizontal Scroll
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>$(document).ready(function() {
+    $('html, body, *').mousewheel(function(e, delta) {
+        // multiplying by 40 is the sensitivity, 
+        // increase to scroll faster.
+        this.scrollLeft -= (delta * 120);
+    });
+$("nav a, .desc").addClass("load");
+  });
+</script>
 
 </head>
 <body>
