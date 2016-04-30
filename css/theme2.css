@@ -58,6 +58,19 @@ nav.main a:hover {
 	color: #333;
 }
 
+nav a {
+	opacity: 0;
+ -webkit-transition: opacity 0.8s ease-in;
+       -moz-transition: opacity 0.8s ease-in;
+        -ms-transition: opacity 0.8s ease-in;
+         -o-transition: opacity 0.8s ease-in;
+            transition: opacity 0.8s ease-in;
+}
+
+nav a.load {
+	opacity: 1;
+}
+
 .copyright {
 	position: absolute;
 	font-size: 0.9em;
@@ -71,6 +84,7 @@ nav.main a:hover {
 	width: 100%;
 	background-color: ghostwhite;
 
+
 }
 
 .content-contain {
@@ -78,6 +92,13 @@ nav.main a:hover {
 	height: 100%;
 	margin-left: 300px;
 	z-index:99;
+	overflow-x: hidden;
+	whitespace: nowrap;
+	padding-left: 20px;
+}
+
+.content-contain p {
+	margin-right: 30px;
 }
 
 
